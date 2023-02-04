@@ -1,0 +1,281 @@
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #b3b2b2;
+  --color1: #ddece7;
+}
+
+.first-content {
+  background: linear-gradient(transparent 80px, white);
+}
+.first-content:after {
+  content: "";
+  background-image: url("./img/ukraine.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.left {
+  color: var(--color1);
+}
+
+.social-logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  border: 2px solid rgb(55, 95, 170);
+  overflow: hidden;
+  max-width: 240px;
+  border-radius: 2rem;
+}
+
+.img_photo {
+  max-height: 300px;
+  max-width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.title {
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.ed-col {
+  background-color: rgb(55, 95, 170, 0.5);
+  color: whitesmoke;
+  border: 3px solid var(--color1);
+  height: fit-content;
+  line-height: 25px;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+li {
+  position: relative;
+}
+
+li:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 5px;
+  border-radius: 1rem;
+  background-color: white;
+  top: 12px;
+  left: -23px;
+}
+
+.tech-col {
+  min-height: 150px;
+  border: 1px solid #000000;
+}
+
+.progress-1 {
+  float: bottom;
+}
+
+.education {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* SKILLS */
+
+.col1 {
+  background-color: rgb(214, 214, 214);
+  min-height: 326px;
+  padding: 20px;
+  border-radius: 1rem;
+  position: relative;
+  border: 2px solid rgb(214, 214, 214);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.col1 svg {
+  margin-bottom: 30px;
+}
+
+.col1 p {
+  margin-top: 15px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.progress-js {
+  background-color: rgba(70, 128, 0, 0.91);
+}
+
+.progress-css {
+  background-color: rgb(30, 104, 0);
+}
+
+.progress-github {
+  background-color: rgba(255, 30, 0, 0.786);
+}
+
+.progress-gulp {
+  background-color: rgb(30, 104, 0);
+}
+
+.progress-react {
+  background-color: rgba(179, 49, 20, 0.85);
+}
+
+.progress-nodejs {
+  background-color: rgba(184, 0, 0, 0.967);
+}
+
+.progress-npm {
+  background-color: rgba(184, 0, 0, 0.967);
+}
+
+.progress-bootstrap {
+  background-color: green;
+}
+
+.progress {
+  border: 1px solid rgba(59, 59, 59, 0.81);
+  margin-bottom: 20px;
+}
+
+.container-main {
+  position: relative;
+}
+
+.telegram-btn {
+  background-color: rgba(255, 255, 255, 0.211);
+  box-shadow: inset 0px 0px 20px 1px rgba(97, 97, 255, 0.5);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(41, 40, 40);
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.telegram-btn svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.telegram-btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.telegram-btn:hover svg {
+  fill: rgb(8, 128, 248);
+}
+
+@media screen and (max-width: 900px) {
+  .telegram-btn {
+    bottom: 10px;
+    right: 10px;
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .col1 {
+    min-height: 367px;
+  }
+}
+
+@media screen and (max-width: 762px) and (min-width: 550px) {
+  .col1 {
+    min-height: 367px;
+  }
+}
+
+.instagram {
+  transition: all 0.3s ease-in-out;
+}
+
+.instagram:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: rgb(55, 95, 170);
+}
+
+.facebook {
+  transition: all 0.3s ease-in-out;
+}
+
+.facebook:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: rgb(55, 95, 170);
+}
+
+.twitter {
+  transition: all 0.3s ease-in-out;
+}
+
+.twitter:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: rgb(55, 95, 170);
+}
+
+.viber g,
+.viber {
+  transition: all 0.3s ease-in-out;
+}
+
+.viber:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+.col1 {
+  opacity: 0;
+  transform: translateY(20px);
+
+}
+
+.show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+
+
